@@ -1,0 +1,1447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portofolio Tailwind CSS</title>
+  </head>
+  <body class="bg-green-100">
+    <!--Header Start-->
+    <header
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#Home" class="flex py-6 text-lg font-bold text-dark">
+              <img src="img/logo.png" alt="logo" class="-mt-2 mr-2 flex w-10" />
+              <p>
+                <span class="font-bold">Dodik </span>
+                <span class="font-normal">Hermawan</span>
+              </p>
+            </a>
+          </div>
+          <div class="z-10 flex items-center justify-between px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300"
+              ></span>
+              <span class="hamburger-line transition duration-300"></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-2xl bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-biru"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skill"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-biru"
+                    >Skill</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#journey"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-biru"
+                    >Journey</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#project"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-biru"
+                    >Project</a
+                  >
+                </li>
+                <li class="group:">
+                  <a
+                    href="#client"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-biru"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contacts"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-biru"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header End-->
+
+    <!-- Hero Section Start-->
+    <section id="Home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-lg font-normal text-dark lg:text-2xl">
+              Hallo👋🏻, welcome to my personal website! I'm
+              <span
+                class="-ml-1 mb-1 block text-3xl font-bold text-biru md:text-4xl lg:text-5xl"
+                >Dodik Hermawan</span
+              >
+            </h1>
+            <h2 class="mb-3 text-lg font-bold text-dark md:text-xl lg:text-2xl">
+              Mechatronics Engineer <span class="text-sky-600">|</span>
+              <span class="typing-text" id="typing-text"></span>
+            </h2>
+            <p
+              class="mb-8 text-base leading-relaxed text-dark md:text-xl lg:text-2xl"
+            >
+              Optimize your operations with cutting-edge automation engineering
+              and <span class="text-biru">intelligent solutions</span>
+            </p>
+            <a
+              href="#"
+              class="trasition duration-800 mr-2 rounded-2xl bg-biru px-5 py-4 text-center text-base font-semibold text-white ease-in-out hover:opacity-90 hover:shadow-lg"
+              >Let's Talk</a
+            >
+            <a
+              href="#"
+              class="trasition duration-800 rounded-2xl bg-biru px-7 py-4 text-center text-base font-semibold text-white ease-in-out hover:opacity-90 hover:shadow-lg"
+              >Download My Resume</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-40 lg:mt-9">
+              <img
+                width="450"
+                height="450"
+                src="img/foto web baru.png"
+                alt="Dodik Hermawan"
+                class="mx-auto max-w-full"
+              />
+              <span
+                class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-110 lg:scale-125"
+              >
+                <svg
+                  width="450"
+                  height="450"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#38bdf8"
+                    d="M23.1,-45.3C28.3,-36.9,30,-27.6,40.7,-19.9C51.4,-12.2,71.1,-6.1,78.2,4.1C85.3,14.3,79.7,28.5,69.4,37C59.1,45.4,44.1,47.9,31.8,45.9C19.4,43.8,9.7,37.2,-0.4,37.9C-10.5,38.6,-21.1,46.7,-31.3,47.5C-41.5,48.3,-51.4,41.8,-61.4,32.7C-71.3,23.6,-81.4,11.8,-77,2.5C-72.6,-6.7,-53.9,-13.5,-42.3,-19.8C-30.7,-26.1,-26.3,-32,-20.4,-40.1C-14.6,-48.2,-7.3,-58.5,0.8,-59.9C8.9,-61.3,17.8,-53.8,23.1,-45.3Z"
+                    transform="translate(100 100) scale(1.0)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section End-->
+
+    <!-- about start-->
+    <section id="about" class="pb-32 pt-36">
+      <div class="container">
+        <div class="flex-warp flex flex-col lg:flex-row">
+          <div class="mb-10 w-full px-4 lg:w-1/2">
+            <h2
+              class="mb-3 max-w-md text-2xl font-bold text-biru md:text-3xl lg:text-4xl"
+            >
+              About Me
+            </h2>
+            <p class="max-w-xl text-base font-normal lg:text-xl">
+              I am a Mechatronics Engineering graduate who is currently engaged
+              in the industrial automation sector. Specialising in operation and
+              use of PLC-based and robotic machines, I have a deep understanding
+              of the use of sensors and actuators. In addition, I am also
+              competent in compiling and understanding ladder diagrams, as well
+              as operating SCADA and HMI systems at an intermediate level.
+              systems at an intermediate level. With a work track record of one
+              year and the robotics vocational guidance experience from
+              Disnaker, I have developed the technical and practical skills
+              necessary to contribute significantly to the industry today.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="mb-3 text-xl font-bold md:text-2xl lg:pt-12 lg:text-3xl">
+              Connect with Me
+            </h3>
+            <p class="font mb-6 text-base font-normal lg:text-xl">
+              Have a project or innovative idea that ignites your enthusiasm?
+              Let’s convene for an engaging discussion and unlock the potential
+              of collaborating to bring your vision to life
+            </p>
+            <div class="flex items-center">
+              <!--Linkedin-->
+              <a
+                href="https://www.linkedin.com/in/dodik-hermawan-933051229/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-lg border-slate-700 hover:border-dark hover:bg-biru"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <!--Github-->
+              <a
+                href="https://github.com/Hermawan498"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-lg border-slate-700 hover:border-dark hover:bg-biru"
+                ><svg
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!--Medium-->
+              <a
+                href="https://medium.com/@dodikhermawan09"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-lg border-slate-700 hover:border-dark hover:bg-biru"
+                ><svg
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Medium</title>
+                  <path
+                    d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+                  />
+                </svg>
+              </a>
+              <!--Instagram-->
+              <a
+                href="https://www.instagram.com/hermawan_498/"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-lg border-slate-700 hover:border-dark hover:bg-biru"
+                ><svg
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <!--Youtube-->
+              <a
+                href="https://www.youtube.com/channel/UCcZekHQi-DI_InObXVv6SuA"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-lg border-slate-700 hover:border-dark hover:bg-biru"
+                ><svg
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about end-->
+
+    <!--Skill start-->
+    <section id="skill" class="bg-green-200 pb-20 pt-20">
+      <div class="container">
+        <h2 class="mb-8 text-center text-3xl font-bold text-biru lg:text-4xl">
+          Skills
+        </h2>
+        <div
+          class="flex flex-col justify-center gap-4 px-4 lg:flex-row lg:gap-8"
+        >
+          <div class="lg:mb-0 lg:mr-8">
+            <!--Proggraming Languages-->
+            <div class="text-center">
+              <h3 class="mb-4 text-2xl font-semibold lg:text-3xl">
+                Proggraming Languages
+              </h3>
+              <div class="flex flex-wrap justify-center gap-4">
+                <!--python-->
+                <a
+                  href="https://www.python.org/"
+                  target="_blank"
+                  class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                >
+                  <svg
+                    width="20"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Python</title>
+                    <path
+                      d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"
+                    />
+                  </svg>
+                  Python</a
+                >
+                <!--LadderLogic-->
+                <a
+                  href="https://ladderlogicworld.com/plc-manufacturers/"
+                  target="_blank"
+                  class="flex items-center gap-1 rounded-xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  ><img src="img/plc.png" alt="plc" width="19" /> LadderLogic</a
+                >
+                <!--C/C++-->
+                <a
+                  href="https://isocpp.org/"
+                  target="_blank"
+                  class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                >
+                  <svg
+                    role="img"
+                    class="mr-2 h-4 w-4 fill-current"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>C++</title>
+                    <path
+                      d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z"
+                    ></path>
+                  </svg>
+                  C/C++
+                </a>
+                <!--SQL-->
+                <a
+                  href="https://www.postgresql.org/"
+                  target="_blank"
+                  class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                >
+                  <svg
+                    role="img"
+                    class="mr-2 h-4 w-4 fill-current"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>PostgreSQL</title>
+                    <path
+                      d="M23.5594 14.7228a.5269.5269 0 0 0-.0563-.1191c-.139-.2632-.4768-.3418-1.0074-.2321-1.6533.3411-2.2935.1312-2.5256-.0191 1.342-2.0482 2.445-4.522 3.0411-6.8297.2714-1.0507.7982-3.5237.1222-4.7316a1.5641 1.5641 0 0 0-.1509-.235C21.6931.9086 19.8007.0248 17.5099.0005c-1.4947-.0158-2.7705.3461-3.1161.4794a9.449 9.449 0 0 0-.5159-.0816 8.044 8.044 0 0 0-1.3114-.1278c-1.1822-.0184-2.2038.2642-3.0498.8406-.8573-.3211-4.7888-1.645-7.2219.0788C.9359 2.1526.3086 3.8733.4302 6.3043c.0409.818.5069 3.334 1.2423 5.7436.4598 1.5065.9387 2.7019 1.4334 3.582.553.9942 1.1259 1.5933 1.7143 1.7895.4474.1491 1.1327.1441 1.8581-.7279.8012-.9635 1.5903-1.8258 1.9446-2.2069.4351.2355.9064.3625 1.39.3772a.0569.0569 0 0 0 .0004.0041 11.0312 11.0312 0 0 0-.2472.3054c-.3389.4302-.4094.5197-1.5002.7443-.3102.064-1.1344.2339-1.1464.8115-.0025.1224.0329.2309.0919.3268.2269.4231.9216.6097 1.015.6331 1.3345.3335 2.5044.092 3.3714-.6787-.017 2.231.0775 4.4174.3454 5.0874.2212.5529.7618 1.9045 2.4692 1.9043.2505 0 .5263-.0291.8296-.0941 1.7819-.3821 2.5557-1.1696 2.855-2.9059.1503-.8707.4016-2.8753.5388-4.1012.0169-.0703.0357-.1207.057-.1362.0007-.0005.0697-.0471.4272.0307a.3673.3673 0 0 0 .0443.0068l.2539.0223.0149.001c.8468.0384 1.9114-.1426 2.5312-.4308.6438-.2988 1.8057-1.0323 1.5951-1.6698zM2.371 11.8765c-.7435-2.4358-1.1779-4.8851-1.2123-5.5719-.1086-2.1714.4171-3.6829 1.5623-4.4927 1.8367-1.2986 4.8398-.5408 6.108-.13-.0032.0032-.0066.0061-.0098.0094-2.0238 2.044-1.9758 5.536-1.9708 5.7495-.0002.0823.0066.1989.0162.3593.0348.5873.0996 1.6804-.0735 2.9184-.1609 1.1504.1937 2.2764.9728 3.0892.0806.0841.1648.1631.2518.2374-.3468.3714-1.1004 1.1926-1.9025 2.1576-.5677.6825-.9597.5517-1.0886.5087-.3919-.1307-.813-.5871-1.2381-1.3223-.4796-.839-.9635-2.0317-1.4155-3.5126zm6.0072 5.0871c-.1711-.0428-.3271-.1132-.4322-.1772.0889-.0394.2374-.0902.4833-.1409 1.2833-.2641 1.4815-.4506 1.9143-1.0002.0992-.126.2116-.2687.3673-.4426a.3549.3549 0 0 0 .0737-.1298c.1708-.1513.2724-.1099.4369-.0417.156.0646.3078.26.3695.4752.0291.1016.0619.2945-.0452.4444-.9043 1.2658-2.2216 1.2494-3.1676 1.0128zm2.094-3.988-.0525.141c-.133.3566-.2567.6881-.3334 1.003-.6674-.0021-1.3168-.2872-1.8105-.8024-.6279-.6551-.9131-1.5664-.7825-2.5004.1828-1.3079.1153-2.4468.079-3.0586-.005-.0857-.0095-.1607-.0122-.2199.2957-.2621 1.6659-.9962 2.6429-.7724.4459.1022.7176.4057.8305.928.5846 2.7038.0774 3.8307-.3302 4.7363-.084.1866-.1633.3629-.2311.5454zm7.3637 4.5725c-.0169.1768-.0358.376-.0618.5959l-.146.4383a.3547.3547 0 0 0-.0182.1077c-.0059.4747-.054.6489-.115.8693-.0634.2292-.1353.4891-.1794 1.0575-.11 1.4143-.8782 2.2267-2.4172 2.5565-1.5155.3251-1.7843-.4968-2.0212-1.2217a6.5824 6.5824 0 0 0-.0769-.2266c-.2154-.5858-.1911-1.4119-.1574-2.5551.0165-.5612-.0249-1.9013-.3302-2.6462.0044-.2932.0106-.5909.019-.8918a.3529.3529 0 0 0-.0153-.1126 1.4927 1.4927 0 0 0-.0439-.208c-.1226-.4283-.4213-.7866-.7797-.9351-.1424-.059-.4038-.1672-.7178-.0869.067-.276.1831-.5875.309-.9249l.0529-.142c.0595-.16.134-.3257.213-.5012.4265-.9476 1.0106-2.2453.3766-5.1772-.2374-1.0981-1.0304-1.6343-2.2324-1.5098-.7207.0746-1.3799.3654-1.7088.5321a5.6716 5.6716 0 0 0-.1958.1041c.0918-1.1064.4386-3.1741 1.7357-4.4823a4.0306 4.0306 0 0 1 .3033-.276.3532.3532 0 0 0 .1447-.0644c.7524-.5706 1.6945-.8506 2.802-.8325.4091.0067.8017.0339 1.1742.081 1.939.3544 3.2439 1.4468 4.0359 2.3827.8143.9623 1.2552 1.9315 1.4312 2.4543-1.3232-.1346-2.2234.1268-2.6797.779-.9926 1.4189.543 4.1729 1.2811 5.4964.1353.2426.2522.4522.2889.5413.2403.5825.5515.9713.7787 1.2552.0696.087.1372.1714.1885.245-.4008.1155-1.1208.3825-1.0552 1.717-.0123.1563-.0423.4469-.0834.8148-.0461.2077-.0702.4603-.0994.7662zm.8905-1.6211c-.0405-.8316.2691-.9185.5967-1.0105a2.8566 2.8566 0 0 0 .135-.0406 1.202 1.202 0 0 0 .1342.103c.5703.3765 1.5823.4213 3.0068.1344-.2016.1769-.5189.3994-.9533.6011-.4098.1903-1.0957.333-1.7473.3636-.7197.0336-1.0859-.0807-1.1721-.151zm.5695-9.2712c-.0059.3508-.0542.6692-.1054 1.0017-.055.3576-.112.7274-.1264 1.1762-.0142.4368.0404.8909.0932 1.3301.1066.887.216 1.8003-.2075 2.7014a3.5272 3.5272 0 0 1-.1876-.3856c-.0527-.1276-.1669-.3326-.3251-.6162-.6156-1.1041-2.0574-3.6896-1.3193-4.7446.3795-.5427 1.3408-.5661 2.1781-.463zm.2284 7.0137a12.3762 12.3762 0 0 0-.0853-.1074l-.0355-.0444c.7262-1.1995.5842-2.3862.4578-3.4385-.0519-.4318-.1009-.8396-.0885-1.2226.0129-.4061.0666-.7543.1185-1.0911.0639-.415.1288-.8443.1109-1.3505.0134-.0531.0188-.1158.0118-.1902-.0457-.4855-.5999-1.938-1.7294-3.253-.6076-.7073-1.4896-1.4972-2.6889-2.0395.5251-.1066 1.2328-.2035 2.0244-.1859 2.0515.0456 3.6746.8135 4.8242 2.2824a.908.908 0 0 1 .0667.1002c.7231 1.3556-.2762 6.2751-2.9867 10.5405zm-8.8166-6.1162c-.025.1794-.3089.4225-.6211.4225a.5821.5821 0 0 1-.0809-.0056c-.1873-.026-.3765-.144-.5059-.3156-.0458-.0605-.1203-.178-.1055-.2844.0055-.0401.0261-.0985.0925-.1488.1182-.0894.3518-.1226.6096-.0867.3163.0441.6426.1938.6113.4186zm7.9305-.4114c.0111.0792-.049.201-.1531.3102-.0683.0717-.212.1961-.4079.2232a.5456.5456 0 0 1-.075.0052c-.2935 0-.5414-.2344-.5607-.3717-.024-.1765.2641-.3106.5611-.352.297-.0414.6111.0088.6356.1851z"
+                    ></path>
+                  </svg>
+                  SQL
+                </a>
+                <a
+                  href="https://html.spec.whatwg.org/multipage/"
+                  target="_blank"
+                  class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  ><svg
+                    role="img"
+                    class="mr-2 h-4 w-4 fill-current"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>HTML5</title>
+                    <path
+                      d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+                    />
+                  </svg>
+                  HTML
+                </a>
+                <!--CSS-->
+                <a
+                  href="https://www.w3.org/Style/CSS/Overview.en.html"
+                  target="_blank"
+                  class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                >
+                  <svg
+                    role="img"
+                    class="mr-2 h-4 w-4 fill-current"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>CSS3</title>
+                    <path
+                      d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
+                    />
+                  </svg>
+                  CSS
+                </a>
+                <!--javascript-->
+                <a
+                  href="https://id.wikipedia.org/wiki/JavaScript"
+                  target="_blank"
+                  class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                >
+                  <svg
+                    role="img"
+                    class="mr-2 h-4 w-4 fill-current"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>JavaScript</title>
+                    <path
+                      d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                    />
+                  </svg>
+                  JavaScript
+                </a>
+              </div>
+            </div>
+            <!--Automation Tools-->
+            <div class="text-center">
+              <h3 class="mb-4 mt-8 text-2xl font-semibold lg:text-3xl">
+                Automation Tools
+              </h3>
+              <div class="flex flex-wrap justify-center gap-4">
+                <!--Codesys-->
+                <a
+                  href="https://www.codesys.com/"
+                  target="_blank"
+                  class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  ><img
+                    src="img/CoDeSys-8.png"
+                    alt="CoDeSys-8"
+                    width="20"
+                  />CODESYS
+                </a>
+                <!--Tia Portal-->
+                <a
+                  href="https://www.siemens.com/global/en/products/automation/industry-software/automation-software/tia-portal.html"
+                  target="_blank"
+                  class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  ><img
+                    src="img/tia portal.png"
+                    alt="siemens"
+                    width="18"
+                  />TiaPortal</a
+                >
+                <!--CX-One-->
+                <a
+                  href="https://automation.omron.com/en/us/products/family/cxone"
+                  target="_blank"
+                  class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  ><img src="img/cx.png" alt="cx-one" width="40" />CxOne
+                </a>
+                <!--OpenPlc-->
+                <a
+                  href="https://autonomylogic.com/"
+                  target="_blank"
+                  class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  ><img
+                    src="img/open plc.png"
+                    alt="OpenPlc"
+                    width="25"
+                  />OpenPLC</a
+                >
+              </div>
+            </div>
+            <div id="more-text" class="hidden">
+              <!--Developer Tools-->
+              <div class="text-center">
+                <h3 class="mb-4 mt-8 text-2xl font-semibold lg:text-3xl">
+                  Developer Tools
+                </h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <!--Git-->
+                  <a
+                    href="https://git-scm.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Git</title>
+                      <path
+                        d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"
+                      />
+                    </svg>
+                    Git
+                  </a>
+                  <!--npm-->
+                  <a
+                    href="https://www.npmjs.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>npm</title>
+                      <path
+                        d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"
+                      />
+                    </svg>
+                    npm
+                  </a>
+                  <!--Postman-->
+                  <a
+                    href="https://www.postman.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Postman</title>
+                      <path
+                        d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099zm2.471 7.485a.855.855 0 0 0-.593.25l-4.453 4.453-.307-.307-.643-.643c4.389-4.376 5.18-4.418 5.996-3.753zm-4.863 4.861l4.44-4.44a.62.62 0 1 1 .847.903l-4.699 4.125-.588-.588zm.33.694l-1.1.238a.06.06 0 0 1-.067-.032.06.06 0 0 1 .01-.073l.645-.645.512.512zm-2.803-.459l1.172-1.172.879.878-1.979.426a.074.074 0 0 1-.085-.039.072.072 0 0 1 .013-.093zm-3.646 6.058a.076.076 0 0 1-.069-.083.077.077 0 0 1 .022-.046h.002l.946-.946 1.222 1.222-2.123-.147zm2.425-1.256a.228.228 0 0 0-.117.256l.203.865a.125.125 0 0 1-.211.117h-.003l-.934-.934-.294-.295 3.762-3.758 1.82-.393.874.874c-1.255 1.102-2.971 2.201-5.1 3.268zm5.279-3.428h-.002l-.839-.839 4.699-4.125a.952.952 0 0 0 .119-.127c-.148 1.345-2.029 3.245-3.977 5.091zm3.657-6.46l-.003-.002a1.822 1.822 0 0 1 2.459-2.684l-1.61 1.613a.119.119 0 0 0 0 .169l1.247 1.247a1.817 1.817 0 0 1-2.093-.343zm2.578 0a1.714 1.714 0 0 1-.271.218h-.001l-1.207-1.207 1.533-1.533c.661.72.637 1.832-.054 2.522zM18.855 6.05a.143.143 0 0 0-.053.157.416.416 0 0 1-.053.45.14.14 0 0 0 .023.197.141.141 0 0 0 .084.03.14.14 0 0 0 .106-.05.691.691 0 0 0 .087-.751.138.138 0 0 0-.194-.033z"
+                      />
+                    </svg>
+                    Postman
+                  </a>
+                  <!--Eagle-->
+                  <a
+                    href="https://www.autodesk.com/products/eagle/free-download?us_oa=dotcom-us&us_si=99cebcc6-87e6-4599-84a2-69768cb7b2e3&us_st=EAGLE"
+                    target="_blank"
+                    class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><img
+                      src="img/eaglee.png"
+                      alt="AutodeskEagle"
+                      width="20"
+                      class="fill-current"
+                    />
+                    AutodeskEagle
+                  </a>
+                  <!--Inventor-->
+                  <a
+                    href="https://www.autodesk.com/products/inventor/overview?term=1-YEAR&tab=subscription"
+                    target="_blank"
+                    class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><img
+                      src="img/inventor.png"
+                      alt="AutodeskInventor"
+                      width="15"
+                    />
+                    AutodeskInventor
+                  </a>
+                  <!--ROS-->
+                  <a
+                    href="https://ros.org/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  >
+                    <svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>ROS</title>
+                      <path
+                        d="M2.807 0C1.353 0 .173 1.22.173 2.722c0 1.504 1.18 2.723 2.634 2.723 1.455 0 2.635-1.22 2.635-2.723S4.262 0 2.807 0zM12 0c-1.455 0-2.634 1.22-2.634 2.722 0 1.504 1.18 2.723 2.634 2.723 1.455 0 2.634-1.22 2.634-2.723S13.454 0 12 0zm9.193 0c-1.455 0-2.635 1.22-2.635 2.722 0 1.504 1.18 2.723 2.635 2.723 1.455 0 2.634-1.22 2.634-2.723S22.647 0 21.193 0zM2.807 9.277C1.353 9.277.173 10.497.173 12s1.18 2.722 2.634 2.722c1.455 0 2.635-1.219 2.635-2.722 0-1.504-1.18-2.723-2.635-2.723zm9.193 0c-1.455 0-2.634 1.22-2.634 2.723s1.18 2.722 2.634 2.722c1.455 0 2.634-1.219 2.634-2.722 0-1.504-1.18-2.723-2.634-2.723zm9.193 0c-1.455 0-2.635 1.22-2.635 2.723s1.18 2.722 2.635 2.722c1.455 0 2.634-1.219 2.634-2.722 0-1.504-1.18-2.723-2.634-2.723zM2.807 18.555c-1.454 0-2.634 1.22-2.634 2.722C.173 22.781 1.353 24 2.807 24c1.455 0 2.635-1.22 2.635-2.723s-1.18-2.722-2.635-2.722zm9.193 0c-1.455 0-2.634 1.22-2.634 2.722C9.366 22.781 10.546 24 12 24c1.455 0 2.634-1.22 2.634-2.723s-1.18-2.722-2.634-2.722zm9.193 0c-1.455 0-2.635 1.22-2.635 2.722 0 1.504 1.18 2.723 2.635 2.723 1.455 0 2.634-1.22 2.634-2.723s-1.18-2.722-2.634-2.722z"
+                      />
+                    </svg>
+                    RobotOperatingSystem
+                  </a>
+                </div>
+              </div>
+              <!--Development Environments-->
+              <div class="text-center">
+                <h3 class="mb-4 mt-8 text-2xl font-semibold lg:text-3xl">
+                  Development Environments
+                </h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <!--Jupyter-->
+                  <a
+                    href="https://jupyter.org/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Jupyter</title>
+                      <path
+                        d="M7.157 22.201A1.784 1.799 0 0 1 5.374 24a1.784 1.799 0 0 1-1.784-1.799 1.784 1.799 0 0 1 1.784-1.799 1.784 1.799 0 0 1 1.783 1.799zM20.582 1.427a1.415 1.427 0 0 1-1.415 1.428 1.415 1.427 0 0 1-1.416-1.428A1.415 1.427 0 0 1 19.167 0a1.415 1.427 0 0 1 1.415 1.427zM4.992 3.336A1.047 1.056 0 0 1 3.946 4.39a1.047 1.056 0 0 1-1.047-1.055A1.047 1.056 0 0 1 3.946 2.28a1.047 1.056 0 0 1 1.046 1.056zm7.336 1.517c3.769 0 7.06 1.38 8.768 3.424a9.363 9.363 0 0 0-3.393-4.547 9.238 9.238 0 0 0-5.377-1.728A9.238 9.238 0 0 0 6.95 3.73a9.363 9.363 0 0 0-3.394 4.547c1.713-2.04 5.004-3.424 8.772-3.424zm.001 13.295c-3.768 0-7.06-1.381-8.768-3.425a9.363 9.363 0 0 0 3.394 4.547A9.238 9.238 0 0 0 12.33 21a9.238 9.238 0 0 0 5.377-1.729 9.363 9.363 0 0 0 3.393-4.547c-1.712 2.044-5.003 3.425-8.772 3.425Z"
+                      />
+                    </svg>
+                    Jupyter
+                  </a>
+                  <!--SublimeText-->
+                  <a
+                    href="https://www.sublimetext.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Sublime Text</title>
+                      <path
+                        d="M20.953.004a.397.397 0 0 0-.18.017L3.225 5.585c-.175.055-.323.214-.402.398a.42.42 0 0 0-.06.22v5.726a.42.42 0 0 0 .06.22c.079.183.227.341.402.397l7.454 2.364-7.454 2.363c-.255.08-.463.374-.463.655v5.688c0 .282.208.444.463.363l17.55-5.565c.237-.075.426-.336.452-.6.003-.022.013-.04.013-.065V12.06c0-.281-.208-.575-.463-.656L13.4 9.065l7.375-2.339c.255-.08.462-.375.462-.656V.384c0-.211-.117-.355-.283-.38z"
+                      />
+                    </svg>
+                    SublimeText
+                  </a>
+                  <!--anaconda-->
+                  <a
+                    href="https://www.anaconda.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Anaconda</title>
+                      <path
+                        d="M12.045.033a12.181 12.182 0 00-1.361.078 17.512 17.513 0 011.813 1.433l.48.438-.465.45a15.047 15.048 0 00-1.126 1.205l-.178.215a8.527 8.527 0 01.86-.05 8.154 8.155 0 11-4.286 15.149 15.764 15.765 0 01-1.841.106h-.86a21.847 21.848 0 00.264 2.866 11.966 11.967 0 106.7-21.89zM8.17.678a12.181 12.182 0 00-2.624 1.275 15.506 15.507 0 011.813.43A18.551 18.552 0 018.17.678zM9.423.75a16.237 16.238 0 00-.995 1.998 16.15 16.152 0 011.605.66 6.98 6.98 0 01.43-.509c.234-.286.472-.559.716-.817A15.047 15.048 0 009.423.75zM4.68 2.949a14.969 14.97 0 000 2.336c.587-.065 1.196-.1 1.812-.107a16.617 16.617 0 01.48-1.748 16.48 16.481 0 00-2.292-.481zM3.62 3.5A11.938 11.938 0 001.762 5.88a17.004 17.004 0 011.877-.444A17.39 17.391 0 013.62 3.5zm4.406.287c-.143.437-.265.888-.38 1.347a8.255 8.255 0 011.67-.803c-.423-.2-.845-.38-1.29-.544zM6.3 6.216a14.051 14.052 0 00-1.555.108c.064.523.157 1.038.272 1.554a8.39 8.391 0 011.283-1.662zm-2.55.137a15.313 15.313 0 00-2.602.716h-.078v.079a17.104 17.105 0 001.267 2.544l.043.071.072-.049a16.309 16.31 0 011.734-1.083l.057-.035V8.54a16.867 16.868 0 01-.408-2.094v-.092zM.644 8.095l-.063.2A11.844 11.845 0 000 11.655v.209l.143-.152a17.706 17.707 0 011.584-1.447l.057-.043-.043-.064a16.18 16.18 0 01-1.025-1.87zm3.77 1.253l-.18.1c-.465.273-.93.573-1.375.889l-.065.05.05.064c.309.437.645.867.996 1.276l.137.165v-.208a8.176 8.176 0 01.364-2.15zM2.2 10.853l-.072.05a16.574 16.574 0 00-1.813 1.734l-.058.058.066.057a15.449 15.45 0 001.991 1.483l.072.05.043-.08a16.738 16.74 0 011.053-1.64v-.05l-.043-.05a16.99 16.99 0 01-1.19-1.54zm1.855 2.071l-.121.172a15.363 15.363 0 00-.917 1.433l-.043.072.071.043a16.61 16.61 0 001.562.766l.193.086-.086-.193a8.04 8.04 0 01-.66-2.172zm-3.976.48v.2a11.758 11.759 0 00.946 3.326l.078.186.072-.194a16.215 16.216 0 01.845-2l.057-.063-.064-.043a17.197 17.198 0 01-1.776-1.284zm2.543 1.805l-.035.08a15.764 15.765 0 00-.983 2.479v.08h.086a16.15 16.152 0 002.688.5l.072.007v-.086a17.562 17.563 0 01.164-2.056v-.065H4.55a16.266 16.266 0 01-1.849-.896zm2.544 1.169v.114a17.254 17.255 0 00-.151 1.828v.078h.931c.287 0 .624.014.946 0h.209l-.166-.129a8.011 8.011 0 01-1.64-1.834zm-3.29 2.1l.115.172a11.988 11.988 0 002.502 2.737l.157.129v-.201a22.578 22.58 0 01-.2-2.336v-.071h-.072a16.23 16.23 0 01-2.3-.387z"
+                      />
+                    </svg>
+                    Anaconda
+                  </a>
+                  <!--VSC-->
+                  <a
+                    href=""
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                  >
+                    <svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Visual Studio Code</title>
+                      <path
+                        d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"
+                      />
+                    </svg>
+                    VisualStudioCode
+                  </a>
+                  <!--NodeJS-->
+                  <a
+                    href="https://nodejs.org/en"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Node.js</title>
+                      <path
+                        d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"
+                      />
+                    </svg>
+                    NodeJs
+                  </a>
+                  <!--Arduino-->
+                  <a
+                    href="https://www.arduino.cc/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Arduino</title>
+                      <path
+                        d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.49 6.49 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854zM6.53 15.734a3.837 3.837 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777.208 0 .416.017.624.043 2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734zm11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734.208-.026.416-.043.624-.043 2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777zm1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183h1.206zM4.246 12.498H7.82v-1.125H4.245v1.125z"
+                      />
+                    </svg>
+                    Arduino
+                  </a>
+                  <!--notepad++-->
+                  <a
+                    href=""
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Notepad++</title>
+                      <path
+                        d="M14.443 2.285c-.305.005-.6.06-.853.248-.256.168-.546.32-.723.578a6.273 6.273 0 00-.71 2.463c-1.009-.413-2.08-.716-3.177-.676a8.602 8.602 0 00-1.93.604c-1.26.657-2.058 1.943-2.53 3.246a6.84 6.84 0 00-.604 1.805c-.107.568-.322 1.115-.357 1.695-.002.394.029.788.023 1.182-.422.263-.926.245-1.398.328-.34-.008-.67-.18-1.014-.07-.36.172-.75.269-1.111.437-.087.51-.166 1.225.457 1.424 1.064-.002 2.132.002 3.195.021.192.98.38 1.99.898 2.86.613.987 1.213 2.025 2.147 2.75.888.593 2.02.617 3.039.441.387-.043.656-.35 1.004-.492.212-.126.527-.156.607-.428.698-1.13.163-2.531-.47-3.56-.403-.707-1.275-.853-2.018-.82-.436.065-.712.44-1.063.667-.388.235-.761.735-.468 1.186.251.473.561 1.107 1.193 1.074.399-.046.932-.136 1.106-.553.077-.505-.519-.748-.92-.838.019.247.045.494.07.743-.207-.143-.415-.28-.625-.418.128-.667.87-.65 1.38-.854.52.81 1.068 1.852.645 2.815-.489.612-1.37.535-2.054.375-.894-.137-1.487-.933-1.881-1.682-.594-1.035-1.323-2.145-1.196-3.387.417-.021.834-.02 1.25.004.398.094.752.438 1.182.27.922-.252 1.881-.1 2.822-.11.74-.052 1.484-.062 2.225-.031.268.073.411.4.72.38.358.12.558-.246.827-.4a17.954 17.954 0 011.79.002c.283.494.706 1.022 1.31 1.092.734.027 1.356-.493 1.753-1.064.52.117 1.082.282 1.586.021 1.095-.464 2.3-.464 3.43-.785v-.322c-.907-.61-2.027-.441-3.043-.695-.775-.133-1.562-.012-2.34-.022-.345-.236-.683-.509-1.119-.537-.134.059-.27.113-.404.168.356.04.728.12.994.38-.336-.02-.684-.004-1.002-.126-.428.157-.835.4-.902.894-.182-.255.083-.493.189-.72-.24-.507-.826-.768-.994-1.315a.289.289 0 01.48-.008c.234.345.426.715.573 1.104.217.013.435.027.654.045v-.25c-.109.045-.216.09-.322.142-.189-.412-.351-.837-.485-1.271.258.062.506.155.766.207 1.176-.184 2.439-.412 3.36-1.232.194-.2.542-.37.484-.698-.057-.474-.402-.841-.573-1.277.267-.101.535-.2.793-.32.918-.899 1.377-2.185 1.477-3.448-.092-.673-.282-1.413-.803-1.886-.95-.48-2.07-.324-3.035.025-.437.174-.76.527-1.123.813-.296-.066-.477-.41-.672-.633-.375-.64-.89-1.235-1.596-1.51-.293-.011-.608-.055-.914-.05zm.395.516c.59.02 1.109.506 1.443.972.222.37.524.682.885.916a5.218 5.218 0 01-.277 3.791c-.167.375-.519.605-.864.795-.91.267-1.874-.133-2.521-.783l.012-.094c-.458-.214-.537-.767-.616-1.21-.39-.893-.293-1.916-.006-2.823.212-.71.756-1.39 1.526-1.498a1.12 1.12 0 01.418-.066zm5.592 1.025c.616.002 1.29.28 1.44.926.48 1.112-.052 2.344-.688 3.273-.368.345-.792.627-1.137 1-.425-.844-1.359-1.219-2.223-1.437.16-.808.04-1.628.022-2.44.468-.835 1.44-1.154 2.326-1.304.084-.011.172-.018.26-.018zm.775 1.62a7.73 7.73 0 01-.523.138c-.125.181-.252.363-.381.545.141.372.636.718.984.38a1.297 1.297 0 00-.08-1.064c-.178-.318 0 0 0 0zm-11.988.046c.9-.011 1.793.272 2.601.653.38.153.353.6.438.933.065.26.14.516.217.774.126.383.292.78.62 1.037.546.418 1.108.867 1.794 1.025a2.425 2.425 0 001.787-.303c.45-.404.668-1.007 1.137-1.396.44.215.927.318 1.351.568.44.278.653.777.912 1.207.09.194.164.392.242.588-.786.782-1.936.988-2.974 1.23-.43.128-.829-.096-1.186-.304-.184.101-.367.209-.552.309a3.718 3.718 0 01-2.145.45 32.773 32.773 0 01-.55-.072c.084-.376.182-.749.259-1.127-.092.008-.277.02-.37.026-.31.476-.325 1.052-.263 1.597.015.207.028.413.037.62a1.573 1.573 0 01-.408-.932c.016-.391.065-.778.1-1.168-.41-.177-.571.292-.647.596 0 .168.012.335.024.502-.714.163-1.48.246-2.188.011-.514-.168-1.075-.182-1.557-.445-.016-.2-.033-.398-.054-.596-.141-.026-.282-.051-.422-.08-.189.507-.452 1.021-.424 1.575.095.365.401.634.629.925-.335.098-.791.022-1.016.334-.135.601.413.948.772 1.319-.516-.19-1.089-.463-1.266-1.03.26-.302.554-.57.881-.797-.471-.698-.676-1.743-.066-2.421-.118-.143-.257-.39-.477-.268-.172.162-.318.35-.484.52-.7.533-.976 1.386-1.399 2.12-.205-.007-.41-.013-.615-.013l-.01-.254a4.621 4.621 0 01-.023-1.014c.153-.596.418-1.158.568-1.755l.051-.194.086-.293c.452-1.231 1.008-2.494 2.012-3.379.642-.636 1.563-.81 2.396-1.07.06-.003.122-.007.182-.008zm5.12.496c-.38-.012-.738.145-.675.596-.055.394.323.572.592.76.602-.003.872-.686.707-1.178a1.264 1.264 0 00-.623-.178zm-8.064 5.79a1.865 1.865 0 00.225 1.622c-.391.203-.826.213-1.256.211-.09-.648.318-1.202.621-1.736.137-.03.275-.062.41-.098zm1.213.544c.353.101.773.09 1.051.358-.042.174-.083.348-.113.525a5.16 5.16 0 00-.654.465 1.747 1.747 0 01-.284-1.348zm7.168.324c.211.023.262.279.4.407.236.306.573.512.852.775-.67.018-1.475.102-1.88-.562-.271.074-.543.183-.684.445l-.4-.217c-.005-.25.004-.502.025-.752h.457c.412.003.824-.028 1.23-.096zm-5.306.147c.02.336.18.73-.07 1.02-.246-.021-.492-.041-.733-.084.326-.195.567-.505.674-.87zm2.51.117c.315.24.445.634.591.986-.938.036-1.878.023-2.814-.039.064-.31.17-.61.252-.916.655-.02 1.313 0 1.97-.03zm.826.535c.152.184.318.355.498.512.24-.277.775-.727.998-.193-.363.174-.813.305-.934.742l-.012.053c.076.381.178.756.307 1.123-.773-.505-.391-1.548-.857-2.237zm-10.815.293c-.02.295-.422.42-.373.727.091.29.21.57.354.838-.491-.023-.989.003-1.475-.088-.046-.256-.161-.635.11-.805.259-.16.47-.389.615-.658.255.04.516.036.77-.014zm.66.153c-.208.362-.461.81-.138 1.191l-.176.078a2.664 2.664 0 01-.361-.676c.102-.184.195-.374.28-.566.132-.006.263-.015.395-.027zm.518.086l.033.08.11-.047c-.04.227-.205.391-.346.562.233.014.296.764-.041.557a10.992 10.992 0 01-.127-.225c.024-.227-.012-.48.181-.648l.055-.067.086-.095.049-.117zm3.943.074c.347.082.895-.121 1.11.166.31.05.603.197.92.205 1.122-.329 2.316-.154 3.47-.154.006.1.02.298.028.398-.869.033-1.737.036-2.604.014-.452-.003-.881-.307-1.338-.17-.2.018-.424.229-.6.043-.28-.003-.562-.012-.843-.018-.045-.17-.1-.34-.143-.484zm-2.428.017c.375.05.849-.096 1.131.225l-.12.27c-.74-.036-1.48-.043-2.221-.065.151-.495.8-.404 1.21-.43zm15.87.016c.502-.022.98.166 1.478.215.003.207.065.428-.035.623-.608.116-1.185.383-1.81.398.011-.168.02-.336.023-.506l.287-.187.057-.543zm-1.61.014c.102 0 .205.004.307.01.229.044.396.227.588.347-.552.275-1.181.207-1.772.127-.456-.062-.93.022-1.377-.115l.125-.225c.708-.06 1.416-.151 2.13-.144zm-3.761.097c.217.002.434.006.652.006.022.22-.071.326-.28.319-.517.014-1.034.012-1.55-.018-.05-.306.34-.249.525-.295.217-.013.435-.014.653-.012zm-.516.647c.542 0 1.083.051 1.615.152.744-.097 1.494-.005 2.235-.135.306.024.95-.115.876.371-.349.042-.674-.177-1.027-.14-.694.043-1.393.107-2.08-.045-.787.165-1.591.088-2.387.137a17.27 17.27 0 00-.021-.305c.268-.03.546-.024.789-.035zm-10.418.012c.6 0 1.203.111 1.803.132l.125.143c-.808-.002-1.622.062-2.426-.022a13.543 13.543 0 01-.104-.209c.2-.032.402-.044.602-.044zm3.426.119c.34.003.683.008 1.025.002 1.337.016 2.672.035 4.006.125a6.16 6.16 0 00-.098.168c-1.304.043-2.606.02-3.91.015l-.822-.029c-.067-.094-.134-.19-.201-.281zm8.642.39c.43.192.857.393 1.305.543.259-.104.615-.671.826-.26-.328.305-.791.614-1.26.51-.36-.17-.59-.52-.87-.793zm-11.984.07l.33.05c.363.841.38 1.81.873 2.599.284.467.518.96.793 1.432.287.492.762.824 1.207 1.162.955.702 2.52.596 3.197-.438.427-.922-.104-1.898-.474-2.74-.634-.996-2.29-.238-2.242.848.364.218.767.663 1.222.384a10.497 10.497 0 01-.013-.533c.108.12.19.261.296.383-.255.329-.67.314-1.045.262-.151-.168-.307-.331-.46-.496-.188-1.083 1.193-1.994 2.11-1.446.655.42.838 1.228 1.099 1.91.301.821-.144 1.793-.924 2.159-.601.388-1.346.234-2.018.234-.917-.044-1.515-.793-2.117-1.387-.58-.712-.958-1.557-1.41-2.351a7.712 7.712 0 01-.424-2.031z"
+                      />
+                    </svg>
+                    Notepad++
+                  </a>
+                </div>
+              </div>
+              <!--Production Tools-->
+              <div class="text-center">
+                <h3 class="mb-4 mt-8 text-2xl font-semibold lg:text-3xl">
+                  Production Tools
+                </h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <!--MicrosoftOffice-->
+                  <a
+                    href="https://www.microsoft.com/id-id/microsoft-365/microsoft-office"
+                    target="_blank"
+                    class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><img
+                      src="img/msOffice.png"
+                      alt="microsoft-office"
+                      width="15"
+                    />
+                    MsOffice
+                  </a>
+                  <!--MicrosoftVisio-->
+                  <a
+                    href="https://www.microsoft.com/id-id/microsoft-365/visio/flowchart-software"
+                    target="_blank"
+                    class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><img src="img/visio.png" alt="visio" width="25" />
+                    MsVisio
+                  </a>
+                  <!--AdobePhotoshop-->
+                  <a
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Adobe Photoshop</title>
+                      <path
+                        d="M9.85 8.42c-.37-.15-.77-.21-1.18-.2-.26 0-.49 0-.68.01-.2-.01-.34 0-.41.01v3.36c.14.01.27.02.39.02h.53c.39 0 .78-.06 1.15-.18.32-.09.6-.28.82-.53.21-.25.31-.59.31-1.03.01-.31-.07-.62-.23-.89-.17-.26-.41-.46-.7-.57zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.899c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.391 11.65c-.399.56-.959.98-1.609 1.22-.68.25-1.43.34-2.25.34-.24 0-.4 0-.5-.01s-.24-.01-.43-.01v3.209c.01.07-.04.131-.11.141H5.52c-.08 0-.12-.041-.12-.131V6.42c0-.07.03-.11.1-.11.17 0 .33 0 .56-.01.24-.01.49-.01.76-.02s.56-.01.87-.02c.31-.01.61-.01.91-.01.82 0 1.5.1 2.06.31.5.17.96.45 1.34.82.32.32.57.71.73 1.14.149.42.229.85.229 1.3.001.86-.199 1.57-.6 2.13zm7.091 3.89c-.28.4-.671.709-1.12.891-.49.209-1.09.318-1.811.318-.459 0-.91-.039-1.359-.129-.35-.061-.7-.17-1.02-.32-.07-.039-.121-.109-.111-.189v-1.74c0-.029.011-.07.041-.09.029-.02.06-.01.09.01.39.23.8.391 1.24.49.379.1.779.15 1.18.15.38 0 .65-.051.83-.141.16-.07.27-.24.27-.42 0-.141-.08-.27-.24-.4-.16-.129-.489-.279-.979-.471-.51-.18-.979-.42-1.42-.719-.31-.221-.569-.51-.761-.85-.159-.32-.239-.67-.229-1.021 0-.43.12-.84.341-1.21.25-.4.619-.72 1.049-.92.469-.239 1.059-.349 1.769-.349.41 0 .83.03 1.24.09.3.04.59.12.86.23.039.01.08.05.1.09.01.04.02.08.02.12v1.63c0 .04-.02.08-.05.1-.09.02-.14.02-.18 0-.3-.16-.62-.27-.96-.34-.37-.08-.74-.13-1.12-.13-.2-.01-.41.02-.601.07-.129.03-.24.1-.31.2-.05.08-.08.18-.08.27s.04.18.101.26c.09.11.209.2.34.27.229.12.47.23.709.33.541.18 1.061.43 1.541.73.33.209.6.49.789.83.16.318.24.67.23 1.029.011.471-.129.94-.389 1.331z"
+                      />
+                    </svg>
+                    Photoshop
+                  </a>
+                  <!--PremierPro-->
+                  <a
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Adobe Premiere Pro</title>
+                      <path
+                        d="M10.15 8.42a2.93 2.93 0 00-1.18-.2 13.9 13.9 0 00-1.09.02v3.36l.39.02h.53c.39 0 .78-.06 1.15-.18.32-.09.6-.28.82-.53.21-.25.31-.59.31-1.03a1.45 1.45 0 00-.93-1.46zM19.75.3H4.25A4.25 4.25 0 000 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.09 11.65c-.4.56-.96.98-1.61 1.22-.68.25-1.43.34-2.25.34l-.5-.01-.43-.01v3.21a.12.12 0 01-.11.14H5.82c-.08 0-.12-.04-.12-.13V6.42c0-.07.03-.11.1-.11l.56-.01.76-.02.87-.02.91-.01c.82 0 1.5.1 2.06.31.5.17.96.45 1.34.82.32.32.57.71.73 1.14.15.42.23.85.23 1.3 0 .86-.2 1.57-.6 2.13zm6.82-3.15v1.95c0 .08-.05.11-.16.11a4.35 4.35 0 00-1.92.37c-.19.09-.37.21-.51.37v5.1c0 .1-.04.14-.13.14h-1.97a.14.14 0 01-.16-.12v-5.58l-.01-.75-.02-.78c0-.23-.02-.45-.04-.68a.1.1 0 01.07-.11h1.78c.1 0 .18.07.2.16a3.03 3.03 0 01.13.92c.3-.35.67-.64 1.08-.86a3.1 3.1 0 011.52-.39c.07-.01.13.04.14.11v.04z"
+                      />
+                    </svg>
+                    PremierePro
+                  </a>
+                  <!--FoxitReader-->
+                  <a
+                    class="flex items-center gap-1 rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><img
+                      src="img/Foxit.png"
+                      alt="--FoxitReader--"
+                      width="20"
+                    />
+                    FoxitReader
+                  </a>
+                </div>
+              </div>
+              <!--OperatingSystem-->
+              <div class="text-center">
+                <h3 class="mb-4 mt-8 text-2xl font-semibold lg:text-3xl">
+                  Operating Systems
+                </h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <!--Windows-->
+                  <a
+                    href="https://www.microsoft.com/en-us/windows?r=1"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Windows</title>
+                      <path
+                        d="M0,0H11.377V11.372H0ZM12.623,0H24V11.372H12.623ZM0,12.623H11.377V24H0Zm12.623,0H24V24H12.623"
+                      />
+                    </svg>
+                    Windows
+                  </a>
+                  <!--ubuntu-->
+                  <a
+                    href="https://ubuntu.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Ubuntu</title>
+                      <path
+                        d="M17.61.455a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41zM12.92.8C8.923.777 5.137 2.941 3.148 6.451a4.5 4.5 0 0 1 .26-.007 4.92 4.92 0 0 1 2.585.737A8.316 8.316 0 0 1 12.688 3.6 4.944 4.944 0 0 1 13.723.834 11.008 11.008 0 0 0 12.92.8zm9.226 4.994a4.915 4.915 0 0 1-1.918 2.246 8.36 8.36 0 0 1-.273 8.303 4.89 4.89 0 0 1 1.632 2.54 11.156 11.156 0 0 0 .559-13.089zM3.41 7.932A3.41 3.41 0 0 0 0 11.342a3.41 3.41 0 0 0 3.41 3.409 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41zm2.027 7.866a4.908 4.908 0 0 1-2.915.358 11.1 11.1 0 0 0 7.991 6.698 11.234 11.234 0 0 0 2.422.249 4.879 4.879 0 0 1-.999-2.85 8.484 8.484 0 0 1-.836-.136 8.304 8.304 0 0 1-5.663-4.32zm11.405.928a3.41 3.41 0 0 0-3.41 3.41 3.41 3.41 0 0 0 3.41 3.41 3.41 3.41 0 0 0 3.41-3.41 3.41 3.41 0 0 0-3.41-3.41z"
+                      />
+                    </svg>
+                    Ubuntu
+                  </a>
+                  <!--RaspberryPi-->
+                  <a
+                    href="https://www.raspberrypi.com/software/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Raspberry Pi</title>
+                      <path
+                        d="m19.8955 10.8961-.1726-.3028c.0068-2.1746-1.0022-3.061-2.1788-3.7348.356-.0938.7237-.1711.8245-.6182.6118-.1566.7397-.4398.8011-.7398.16-.1066.6955-.4061.6394-.9211.2998-.2069.4669-.4725.3819-.8487.3222-.3515.407-.6419.2702-.9096.3868-.4805.2152-.7295.05-.9817.2897-.5254.0341-1.0887-.7758-.9944-.3221-.4733-1.0244-.3659-1.133-.3637-.1215-.1519-.2819-.2821-.7755-.219-.3197-.2851-.6771-.2364-1.0458-.0964-.4378-.3403-.7275-.0675-1.0584.0356-.53-.1706-.6513.0631-.9117.1583-.5781-.1203-.7538.1416-1.0309.4182l-.3224-.0063c-.8719.5061-1.305 1.5366-1.4585 2.0664-.1536-.5299-.5858-1.5604-1.4575-2.0664l-.3223.0063C9.942.5014 9.7663.2394 9.1883.3597 8.9279.2646 8.807.0309 8.2766.2015c-.2172-.0677-.417-.2084-.6522-.2012l.0004.0002C7.5017.0041 7.369.049 7.2185.166c-.3688-.1401-.7262-.1887-1.0459.0964-.4936-.0631-.654.0671-.7756.219C5.2887.4791 4.5862.3717 4.264.845c-.8096-.0943-1.0655.4691-.7756.9944-.1653.2521-.3366.5013.05.9819-.1367.2677-.0519.5581.2703.9096-.085.3763.0822.6418.3819.8487-.0561.515.4795.8144.6394.9211.0614.3001.1894.5832.8011.7398.1008.4472.4685.5244.8245.6183-1.1766.6737-2.1856 1.56-2.1788 3.7348l-.1724.3028c-1.3491.8082-2.5629 3.4056-.6648 5.5167.124.6609.3319 1.1355.5171 1.6609.2769 2.117 2.0841 3.1082 2.5608 3.2255.6984.524 1.4423 1.0212 2.449 1.3696.949.964 1.977 1.3314 3.0107 1.3308.0152 0 .0306.0002.0457 0 1.0337.0006 2.0618-.3668 3.0107-1.3308 1.0067-.3483 1.7506-.8456 2.4491-1.3696.4766-.1173 2.2838-1.1085 2.5607-3.2255.1851-.5253.3931-1 .517-1.6609 1.8981-2.1113.6843-4.7089-.6649-5.517zm-1.0386-.3715c-.0704.8759-4.6354-3.0504-3.8472-3.1808 2.1391-.3558 3.9191.896 3.8472 3.1808zm-2.0155 4.3649c-1.1481.7409-2.8025.2626-3.6953-1.0681-.8928-1.3306-.6858-3.0101.4623-3.7509 1.1481-.7409 2.8025-.2627 3.6953 1.068.8927 1.3307.6858 3.0101-.4623 3.751zM13.6591 1.3721c.0396.1967.0843.321.1354.3577.2537-.272.4611-.5506.7878-.8123.0011.1537-.0776.3205.1169.4425.1752-.2356.4119-.4459.7263-.6244-.1514.2611-.026.3404.0554.4486.24-.2059.4681-.4144.9109-.5759-.121.1474-.2902.2914-.1108.4607.2473-.1544.496-.3086 1.0833-.4183-.1323.1475-.4059.295-.2401.4426.3104-.1186.6539-.2047 1.034-.2546-.182.1496-.3337.2963-.1846.4122.3323-.1022.7899-.2398 1.2372-.1212l-.2832.2849c-.0314.0382.6623.0297 1.1202.0364-.167.2321-.3375.4562-.437.8548.0454.0459.2723.0204.4862 0-.2194.4618-.6004.5783-.6893.776.134.1015.32.075.5232.006-.158.3254-.4892.5484-.7509.8123.0662.047.1818.075.4555.0425-.2418.257-.5339.492-.8802.7032.0614.0708.2722.0681.4678.0727-.3136.3069-.7173.466-1.0955.6668.1885.1288.3234.0988.4678.097-.2676.2198-.7225.3342-1.1448.4668.0803.1249.1607.1589.3324.194-.447.2473-1.0873.1343-1.2679.2607.0435.1243.1665.2053.3139.2728-.7197.0418-2.6879-.0262-3.0652-1.5156.7367-.8094 2.0813-1.7593 4.394-2.934-1.7994.6022-3.4229 1.405-4.7817 2.5096-1.5978-.7436-.4965-2.6197.283-3.3645zm-1.6126 5.3718c1.1329-.0123 2.5356.8325 2.53 1.6286-.005.7027-.9851 1.2715-2.5213 1.2607-1.5043-.0177-2.5172-.7148-2.5137-1.3957.003-.5603 1.2282-1.5263 2.505-1.4936zm-5.7646-.6006c.1717-.0351.252-.0692.3323-.194-.4223-.1327-.8772-.247-1.1448-.4668.1444.0018.2792.0318.4678-.097-.3783-.2008-.782-.3599-1.0956-.6668.1955-.0048.4064-.002.4677-.0728-.3462-.2113-.6383-.4463-.8801-.7033.2738.0325.3893.0045.4555-.0425-.2617-.264-.593-.487-.7509-.8123.2032.069.3892.0954.5232-.006-.089-.1977-.47-.3142-.6894-.776.214.0204.4409.0459.4863 0-.0994-.3985-.2698-.6226-.4369-.8547.4579-.0067 1.1516.0018 1.1202-.0364l-.2831-.2849c.4472-.1186.9049.019 1.2371.1213.1492-.1159-.0026-.2626-.1847-.4123.3801.05.7236.1361 1.034.2547.1659-.1476-.1076-.2951-.24-.4426.5872.1097.8361.2639 1.0833.4183.1794-.1694.0103-.3133-.1108-.4607.4428.1615.6709.37.911.5759.0814-.1082.2068-.1875.0554-.4486.3143.1785.5511.3888.7263.6244.1945-.122.1159-.2888.1169-.4426.3267.2618.534.5404.7879.8124.0511-.0366.0959-.161.1354-.3577.7794.7448 1.8807 2.6208.2831 3.3646-1.3589-1.1039-2.9817-1.9064-4.78-2.5086 2.3115 1.174 3.6556 2.1239 4.392 2.9328-.3773 1.4895-2.3455 1.5575-3.0651 1.5157.1473-.0676.2703-.1485.3139-.2728-.1806-.1264-.8209-.0134-1.2679-.2607zm2.8175 1.1334c.7881.1304-3.7769 4.0567-3.8472 3.1809-.0719-2.2846 1.7079-3.5367 3.8472-3.1809zm-4.847 8.7567c-1.1094-.8789-1.4668-3.4529.5901-4.6097 1.2394-.3273.4184 5.051-.5901 4.6097zm4.2656 4.5989c-.6257.3719-2.1452.2187-3.2252-1.3095-.7283-1.2823-.6345-2.5872-.123-2.9705.7648-.4589 1.9464.1609 2.8559 1.2003.7923.9405 1.1536 2.5927.4923 3.0797zm-1.2415-5.6086c-1.1481-.7409-1.3551-2.4203-.4623-3.7511.8928-1.3307 2.5472-1.8089 3.6952-1.068 1.1481.7409 1.3551 2.4203.4623 3.7509-.8926 1.3308-2.5471 1.809-3.6952 1.0682zm4.7948 8.2279c-1.3763.0584-2.7258-1.1105-2.7081-1.5157-.0206-.594 1.6758-1.0578 2.782-1.0306 1.1131-.0479 2.6068.3531 2.6097.8851.0184.5166-1.3547 1.6838-2.6836 1.6612zm2.7584-5.8578c.0081 1.3899-1.226 2.5225-2.7562 2.5299-1.5302.0073-2.7773-1.1135-2.7854-2.5033v-.0265c-.008-1.3899 1.2259-2.5226 2.7562-2.5299 1.5302-.0073 2.7773 1.1134 2.7853 2.5033a.7794.7794 0 0 1 .0001.0265zm3.855 2.0029c-1.186 1.6208-2.7916 1.684-3.3896 1.2325-.6255-.5811-.148-2.3854.7094-3.3747v-.0003c.9812-1.0912 2.0302-1.8037 2.7609-1.2469.4919.4828.7805 2.3008-.0807 3.3894zm1.0724-3.4301c-1.0086.4413-1.8298-4.9372-.5901-4.61 2.0568 1.1569 1.6994 3.731.5901 4.61zm-.0256-8.3279h.2985v-.5304h.2986c.1502 0 .2053.0624.2262.2052.0152.1088.0113.2395.0477.3253h.2984c-.0533-.0763-.0515-.2358-.0571-.3213-.0097-.1373-.0513-.2796-.1977-.3176v-.0037c.1502-.061.2149-.1807.2149-.341 0-.2048-.1539-.3738-.3974-.3738h-.732v1.3573zm.2985-1.1255h.3269c.1333 0 .2054.0573.2054.188 0 .1369-.0721.1942-.2054.1942H20.03v-.3822zm-1.0337.4633c0 .7009.5682 1.2694 1.2695 1.2694s1.2695-.5684 1.2695-1.2694c0-.7013-.5683-1.2697-1.2695-1.2697-.7013 0-1.2695.5684-1.2695 1.2697zm2.3275 0c0 .5845-.4737 1.058-1.058 1.058s-1.058-.4735-1.058-1.058c0-.5849.4737-1.058 1.058-1.058s1.058.4731 1.058 1.058z"
+                      />
+                    </svg>
+                    RaspberryPi
+                  </a>
+                </div>
+              </div>
+              <!--Collaboration Tools-->
+              <div class="text-center">
+                <h3 class="mb-4 mt-8 text-2xl font-semibold lg:text-3xl">
+                  Collaboration Tools
+                </h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <!--Notion-->
+                  <a
+                    href="https://www.notion.so/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Notion</title>
+                      <path
+                        d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"
+                      />
+                    </svg>
+                    Notion
+                  </a>
+                  <!--Github-->
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>GitHub</title>
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                      />
+                    </svg>
+                    Github
+                  </a>
+                  <!--Discord-->
+                  <a
+                    href="https://discord.com/"
+                    target="_blank"
+                    class="flex items-center rounded-2xl bg-sky-300 px-4 py-2 hover:border-dark hover:bg-biru"
+                    ><svg
+                      role="img"
+                      class="mr-2 h-4 w-4 fill-current"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Discord</title>
+                      <path
+                        d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                      />
+                    </svg>
+                    Discord
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="mt-10 text-center">
+              <button
+                id="toggle-btn"
+                class="trasition duration-800 mr-2 rounded-xl bg-biru px-4 py-2 text-center text-base font-semibold text-white ease-in-out hover:opacity-90 hover:shadow-lg"
+              >
+                See More
+              </button>
+              <button
+                id="hide-btn"
+                class="trasition duration-800 mr-2 hidden rounded-xl bg-biru px-4 py-2 text-center text-base font-semibold text-white ease-in-out hover:opacity-90 hover:shadow-lg"
+              >
+                See Less
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Skill end-->
+
+    <!--Journey start-->
+    <section id="journey" class="bg-green-50 pb-20 pt-20">
+      <div class="container">
+        <h2 class="mb-8 text-center text-3xl font-bold text-biru lg:text-4xl">
+          Journey
+        </h2>
+        <!-- Professional Experience Subsection -->
+        <div class="mb-12 px-4">
+          <h3 class="mb-4 text-center text-2xl font-semibold lg:text-3xl">
+            Professional Experience
+          </h3>
+          <!-- PT Nasta Mekatronika -->
+          <div
+            class="relative mb-4 flex items-start border-l-4 border-green-300"
+          >
+            <div
+              class="absolut -ml-[18px] h-8 w-8 rounded-xl border-4 border-green-50 bg-green-300"
+            ></div>
+            <div
+              class="ml-4 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
+            >
+              <a rel="noopener noreferrer">
+                <img
+                  src="img/mekatronikaindonesia_logo.jpeg"
+                  alt="nasta mekatronikaindonesia_logo"
+                  class="rounded-2xl object-contain"
+                  width="100"
+                />
+              </a>
+            </div>
+            <div class="flex-1 rounded-2xl bg-white p-4 shadow">
+              <h4 class="text-xl font-semibold">Engineer</h4>
+              <div class="flex items-center text-base">
+                <h5 class="text-lg font-semibold text-biru">
+                  PT Nasta Mekatornika Indonesia
+                </h5>
+                <span class="mx-2">.</span>
+                <p>Full-Time</p>
+              </div>
+              <p class="text-base">April 2019 - December 2019</p>
+              <div class="mb-2 flex items-center text-base">
+                <p>Surabaya, Indonesia</p>
+                <span class="mx-2">.</span>
+                <p>On-Site</p>
+              </div>
+              <p class="mb-2 text-base">
+                <span class="text-biru">PT Nasta Mekatronika Indonesia</span>
+                is a company engaged in industrial robotics and automation,
+                especially material handling. We work on robotics and automation
+                projects for material handling and supporting facilities.
+              </p>
+              <!--<div class="work-entry">
+                <div class="flex flex-wrap gap-2 text-base font-semibold">
+                  <button
+                    class="toggle-button rounded-2xl bg-biru px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:opacity-75"
+                  >
+                    Key Achievments
+                  </button>
+                  <button
+                    class="toggle-button rounded-2xl bg-biru px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:opacity-75"
+                  >
+                    Key Responsibilities
+                  </button>
+                </div>-->
+            </div>
+          </div>
+
+          <!-- PT Nasta Mekatronika -->
+          <div
+            class="relative mb-4 flex items-start border-l-4 border-green-300"
+          >
+            <div
+              class="absolut -ml-[18px] h-8 w-8 rounded-xl border-4 border-green-50 bg-green-300"
+            ></div>
+            <div
+              class="ml-4 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
+            >
+              <a rel="noopener noreferrer">
+                <img
+                  src="img/mekatronikaindonesia_logo.jpeg"
+                  alt="nasta mekatronikaindonesia_logo"
+                  class="rounded-2xl object-contain"
+                  width="100"
+                />
+              </a>
+            </div>
+            <div class="flex-1 rounded-2xl bg-white p-4 shadow">
+              <h4 class="text-xl font-semibold">Engineer Intern</h4>
+              <div class="flex items-center text-base">
+                <h5 class="text-lg font-semibold text-biru">
+                  PT Nasta Mekatornika Indonesia
+                </h5>
+                <span class="mx-2">.</span>
+                <p>Internship</p>
+              </div>
+              <p class="text-base">January 2019 - April 2019</p>
+              <div class="mb-2 flex items-center text-base">
+                <p>Surabaya, Indonesia</p>
+                <span class="mx-2">.</span>
+                <p>On-Site</p>
+              </div>
+              <p class="mb-2 text-base">
+                <span class="text-biru">PT Nasta Mekatronika Indonesia</span>
+                is a company engaged in industrial robotics and automation,
+                especially material handling. We work on robotics and automation
+                projects for material handling and supporting facilities.
+              </p>
+              <!--<div class="work-entry">
+                  <div class="flex flex-wrap gap-2 text-base font-semibold">
+                    <button
+                      class="toggle-button rounded-2xl bg-biru px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:opacity-75"
+                    >
+                      Key Achievments
+                    </button>
+                    <button
+                      class="toggle-button rounded-2xl bg-biru px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:opacity-75"
+                    >
+                      Key Responsibilities
+                    </button>
+                  </div>-->
+            </div>
+          </div>
+
+          <!-- Kemnaker -->
+          <div
+            class="relative mb-4 flex items-start border-l-4 border-green-300"
+          >
+            <div
+              class="absolut -ml-[18px] h-8 w-8 rounded-xl border-4 border-green-50 bg-green-300"
+            ></div>
+            <div
+              class="ml-4 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
+            >
+              <a rel="noopener noreferrer">
+                <img
+                  src="img/kemnaker.png"
+                  alt="Kemnaker"
+                  class="object-contain"
+                  width="50"
+                />
+              </a>
+            </div>
+            <div class="flex-1 rounded-2xl bg-white p-4 shadow">
+              <h4 class="text-xl font-semibold">
+                Intensive Programme Mobile Robotics
+              </h4>
+              <div class="flex items-center text-base">
+                <h5 class="text-lg font-semibold text-biru">Kemnaker</h5>
+                <span class="mx-2">.</span>
+                <p>Full-Time</p>
+              </div>
+              <p class="text-base">Juli 2016 - April 2017</p>
+              <div class="mb-2 flex items-center text-base">
+                <p>Surabaya, Indonesia</p>
+                <span class="mx-2">.</span>
+                <p>On-Site</p>
+              </div>
+              <p class="mb-2 text-base">
+                <span class="text-biru">Kemnaker</span>
+                is the ministry in the Government of Indonesia in charge of
+                labour affairs. The Ministry of Manpower is under and
+                responsible to the President.
+              </p>
+              <!--<div class="work-entry">
+                  <div class="flex flex-wrap gap-2 text-base font-semibold">
+                    <button
+                      class="toggle-button rounded-2xl bg-biru px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:opacity-75"
+                    >
+                      Key Achievments
+                    </button>
+                    <button
+                      class="toggle-button rounded-2xl bg-biru px-4 py-2 font-semibold text-white transition duration-300 ease-in-out hover:opacity-75"
+                    >
+                      Key Responsibilities
+                    </button>
+                  </div>-->
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Subsection -->
+        <div class="mb-12 px-4">
+          <h3 class="mb-4 text-center text-2xl font-semibold lg:text-3xl">
+            Education
+          </h3>
+
+          <!-- Politeknik Elektronika Negeri Surabaya -->
+          <div
+            class="relative mb-4 flex items-start border-l-4 border-green-300"
+          >
+            <div
+              class="absolut -ml-[18px] h-8 w-8 rounded-xl border-4 border-green-50 bg-green-300"
+            ></div>
+            <div
+              class="ml-4 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
+            >
+              <a
+                href="https://www.pens.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="img/pens.png"
+                  alt="Kemnaker"
+                  class="object-contain"
+                  width="80"
+                />
+              </a>
+            </div>
+            <div class="flex-1 rounded-2xl bg-white p-4 shadow">
+              <h4 class="text-xl font-semibold">
+                Bachelor of Engineering in Applied Mechatronics Engineering
+              </h4>
+              <div class="flex items-center text-base">
+                <h5 class="text-lg font-semibold text-biru">
+                  Politeknik Elektronika Negeri Surabaya
+                </h5>
+              </div>
+              <p class="text-base">June 2016 - August 2023</p>
+              <div class="mb-2 flex items-center text-base">
+                <p>Surabaya, Indonesia</p>
+                <span class="mx-2">.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SMKN 1 Bangil -->
+          <div
+            class="relative mb-4 flex items-start border-l-4 border-green-300"
+          >
+            <div
+              class="absolut -ml-[18px] h-8 w-8 rounded-xl border-4 border-green-50 bg-green-300"
+            ></div>
+            <div
+              class="ml-4 mr-4 flex h-24 w-24 items-center justify-center rounded-2xl bg-white shadow"
+            >
+              <a
+                href="https://smkn1bangil.sch.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="img/smkn1 bangil.png"
+                  alt="Kemnaker"
+                  class="object-contain"
+                  width="80"
+                />
+              </a>
+            </div>
+            <div class="flex-1 rounded-2xl bg-white p-4 shadow">
+              <h4 class="text-xl font-semibold">
+                Graduates in Industrial Electronics Engineering
+              </h4>
+              <div class="flex items-center text-base">
+                <h5 class="text-lg font-semibold text-biru">
+                  SMK Negeri 1 Bangil
+                </h5>
+              </div>
+              <p class="text-base">Mei 2013 - Mei 2016</p>
+              <div class="mb-2 flex items-center text-base">
+                <p>Surabaya, Indonesia</p>
+                <span class="mx-2">.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Journey end-->
+
+    <!--project start-->
+    <section id="project" class="bg-green-200 pb-16 pt-36">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h2
+              class="mb-4 text-center text-3xl font-bold text-biru xl:text-4xl"
+            >
+              Project
+            </h2>
+            <div class="flex flex-wrap">
+              <!--project start-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--project end-->
+
+    <!--Client start-->
+    <section id="client" class="bg-gray-300 pb-20 pt-20">
+      <div class="container">
+        <h2 class="mb-8 text-center text-3xl font-bold text-biru lg:text-4xl">
+          Clients
+        </h2>
+        <p class="px-4 text-center font-medium lg:px-40 lg:text-lg">
+          Throughout my career, I’ve had the opportunity to collaborate with a
+          diverse range of clients, each with their unique challenges and goals.
+          Here are the clients I’ve worked with.
+        </p>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <!--Nasta-->
+            <a
+              class="max-w[120px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              ><img src="img/nasta.png" alt="PT NASTA Logo" width="80"
+            /></a>
+            <!--Lks-->
+            <a
+              class="max-w[120px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              ><img src="img/lks.png" alt="PT NASTA Logo" width="50"
+            /></a>
+            <!--Festo-->
+            <a
+              class="max-w[120px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              ><img src="img/festo.png" alt="PT NASTA Logo" width="80"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Client End-->
+
+    <!--Contact-->
+    <section id="contacts" class="bg-off-white dark:bg-night pb-20 pt-20">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="text-dark-charcoal mb-2 text-lg font-semibold">
+              Contacts
+            </h4>
+            <h2
+              class="text-3xl- text-metallic-gold mb-4 font-bold sm:text-4xl lg:text-5xl"
+            >
+              Get in Touch
+            </h2>
+            <p class="text-md text-dark-charcoal font-medium md:text-lg">
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+        <form action="https://hardefarogonondo.github.io/">
+          <div class="w-full px-4 lg:mx-auto lg:w-2/3">
+            <div class="mb-8 w-full px-4">
+              <label for="name" class="text-dark-charcoal text-base font-bold"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="text-dark-charcoal focus:border-metallic-gold focus:ring-metallic-gold w-full rounded-md bg-slate-200 p-3 focus:outline-none focus:ring-1"
+              />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label for="email" class="text-dark-charcoal text-base font-bold"
+                >Email</label
+              >
+              <input
+                type="text"
+                id="email"
+                class="text-dark-charcoal focus:border-metallic-gold focus:ring-metallic-gold w-full rounded-md bg-slate-200 p-3 focus:outline-none focus:ring-1"
+              />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label
+                for="messages"
+                class="text-dark-charcoal text-base font-bold"
+                >Messages</label
+              >
+              <textarea
+                type="text"
+                id="messages"
+                class="text-dark-charcoal focus:border-metallic-gold focus:ring-metallic-gold h-32 w-full rounded-md bg-slate-200 p-3 focus:outline-none focus:ring-1"
+              ></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button
+                class="bg-umber text-cream w-full rounded-full px-8 py-3 text-base font-semibold transition duration-500 hover:opacity-80 hover:shadow-lg"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--Contact-->
+
+    <!--Footer-->
+    <footer class="bg-soft-cloud dark:bg-charcoal pb-20 pt-20">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="mb-12 w-full px-4 font-medium text-dark md:w-1/3">
+            <h2 class="text-cream mb-5 text-4xl font-bold">VLTR</h2>
+            <h3 class="mb-2 text-2xl font-bold">Contact Us</h3>
+            <p>Dodik Hermawan@gmail.com</p>
+            <p>Pasuruan</p>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="text-cream mb-5 text-xl font-semibold">My Writings</h3>
+            <ul class="text-dark">
+              <li>
+                <a
+                  href=""
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
+                  >Article</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
+                  >One Piece</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
+                  >Tech</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="text-cream mb-5 text-xl font-semibold">Links</h3>
+            <ul class="text-dark">
+              <li>
+                <a
+                  href=""
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-cream hover:text-metallic-gold mb-3 inline-block text-base"
+                  >Clients</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/dodik-hermawan-933051229/"
+              target="_blank"
+              class="border-umber hover:bg-terra-cotta hover:text-cream hover:border-charcoal mr-3 flex h-9 w-9 items-center justify-center rounded-full border"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                ></path>
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/hermawan_498/"
+              target="_blank"
+              class="border-umber hover:bg-terra-cotta hover:text-cream hover:border-charcoal mr-3 flex h-9 w-9 items-center justify-center rounded-full border"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-medium text-slate-500">
+            Made with ☕ by
+            <a
+              href="https://www.linkedin.com/in/dodik-hermawan-933051229/"
+              target="_blank"
+              class="text-teal font-bold"
+              >Dodik Hermawan</a
+            >
+            with
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="text-bold text-teal"
+              >Tailwind CSS</a
+            >
+          </p>
+          <p class="text-center text-xs font-medium text-slate-500">
+            Happiness For All Of Us
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--Footer-->
+
+    <script src="js/typing-animation.js"></script>
+  </body>
+</html>
